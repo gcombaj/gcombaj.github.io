@@ -13,7 +13,7 @@ body {
     content: '';
     height: 100vh;
     widows: 100%;
-    background-image: url('../img/showcase.jpg');
+    background-image: url('../img/showcase.jpg?1');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
