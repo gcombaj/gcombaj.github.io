@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skeleton CSS demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+
+    <style>
+        .columns, .column {
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+    <!-- Headings-->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+
+    <!-- FLOATING -->
+    <h2 class="u-pull-left">Left</h2>
+    <h2 class="u-pull-right">Right</h2>
+    <div class="u-cf"></div>
+
+    <!-- BUTTONS -->
+    <button>Button</button>
+    <input type="submit" value="Submit">
+    <input type="button" value="Button">
+    <a href="#" class="button">Link</a>
+
+    <br/>
+    <!-- PRIMARY BTNs-->
+    <button class="button-primary" >Button</button>
+    <input class="button-primary" type="submit" value="Submit">
+    <input class="button-primary" type="button" value="Button">
+    <a href="#" class="button button-primary">Link</a>
+
+    <br>
+
+    <!-- full widht not just for buttons -->
+    <button class="u-full-width button-primary">Full Width</button>
+
+    <!-- lists -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <ul>
+            <li>Web Design</li>
+            <li>Programming</li>
+        </ul>
+        <li>Contact</li>
+    </ul>
+
+    <!-- code block -->
+    <pre><code>
+        body {
+            color: #fff;
+            background: #000;
+        }
+    </code></pre>
+
+    <!-- tables -->
+    <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>John</th>
+                <th>john@doe.com</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <th>Jacke</th>
+                <th>jacke@doe.com</th>
+                <th>New York</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- forms -->
+        <!-- FORMS -->
+        <form>
+            <div>
+              <label>Name</label>
+              <input class="u-full-width" type="text" placeholder="Enter name">
+            </div>
+            <div>
+              <label>Membership</label>
+              <select class="u-full-width">
+              <option value="1">Membership 1</option>
+              <option value="2">Membership 2</option>
+              <option value="3">Membership 3</option>
+            </select>
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea class="u-full-width" placeholder="Enter message"></textarea>
+            </div>
+            <div>
+              <label class="">
+                <input type="checkbox">
+                <span class="label-body">Subscribe to email</span>
+            </label>
+            </div>
+            <input class="button-primary" type="submit" value="Submit">
+          </form>
+
+    <!-- Grid system-->
+    <div class="row">
+        <div class="eight columns">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus sed molestias beatae voluptas ipsum excepturi ex maxime cumque maiores assumenda commodi sequi placeat, labore qui pariatur molestiae provident facere? Labore rerum aut ducimus aperiam commodi ad provident rem quibusdam fuga, eligendi molestias voluptatum quidem. Suscipit autem tenetur rerum labore magni?
+        </div>
+        <div class="four columns">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus sed molestias beatae voluptas ipsum excepturi ex maxime cumque maiores assumenda commodi sequi placeat, labore qui pariatur molestiae provident facere? Labore rerum aut ducimus aperiam commodi ad provident rem quibusdam fuga, eligendi molestias voluptatum quidem. Suscipit autem tenetur rerum labore magni?
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <div class="six columns">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus sed molestias beatae voluptas ipsum excepturi ex maxime cumque maiores assumenda commodi sequi placeat, labore qui pariatur molestiae provident facere? Labore rerum aut ducimus aperiam commodi ad provident rem quibusdam fuga, eligendi molestias voluptatum quidem. Suscipit autem tenetur rerum labore magni?
+            </div>
+            <div class="six columns">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus sed molestias beatae voluptas ipsum excepturi ex maxime cumque maiores assumenda commodi sequi placeat, labore qui pariatur molestiae provident facere? Labore rerum aut ducimus aperiam commodi ad provident rem quibusdam fuga, eligendi molestias voluptatum quidem. Suscipit autem tenetur rerum labore magni?
+            </div>
+        </div>
+
+    <br>
+    <div class="row">
+        <div class="one-third column">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, a?
+        </div>
+        <div class="two-thirds column">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, a?
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="one-third column">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+            <div class="one-third column">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+            <div class="one-third column">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+          </div>
+      
+          <br>
+      
+          <div class="row">
+            <div class="one-half column">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorem.
+            </div>
+            <div class="one-half column">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorem.
+            </div>
+          </div>
+        </div>
+      
+        <div style="margin-top:500px;"></div>    
+    </div>
+</body>
+</html>
