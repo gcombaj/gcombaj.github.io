@@ -92,6 +92,11 @@ ul {
 .no-resize {
     resize: none;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
 /*large screens */
 
 @media(min-width: 700px) {
