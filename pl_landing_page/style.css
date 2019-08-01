@@ -214,6 +214,7 @@ h1, h2,h3,h4,h5,h6 {
     #left {
         justify-content: start;
         margin-top: 4vh;
+        background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
 
     }
     #signin .logo {
@@ -225,5 +226,16 @@ h1, h2,h3,h4,h5,h6 {
     }
     #main-footer {
         padding-top: 1rem;
+    }
+}
+
+@media (min-height: 300px) and (max-height: 359px) {
+    #left {
+        padding-top: 80vh;
+    }
+}
+@media (min-height: 400px) and (max-height: 420px) {
+    #left {
+        padding-top: 80vh;
     }
 }
