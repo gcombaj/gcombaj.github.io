@@ -67,7 +67,7 @@ img {
 
 .top-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 20px;    
     grid-template-areas:
         'showcase showcase top-box-a'
         'showcase showcase top-box-b';
@@ -109,8 +109,10 @@ img {
     display: grid;
     align-items: center;
     justify-items: center;
-    box-shadow: (--shadow);
+    box-shadow: var(--shadow);
     padding: 1.5rem;
+    /* padding: 1.5rem 5rem; */
+    
 }
 
 .top-box .price {
@@ -140,6 +142,7 @@ img {
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
+    
 }
 
 /* Info */
