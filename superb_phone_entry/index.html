@@ -11,7 +11,6 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="brand"><span>Acme</span> Web Design</h1>
     <div class="wrapper ">
       <div class="company-info">
         <h3>Acme Web Design</h3>
@@ -40,16 +39,16 @@
           <p>
             <button type="button" onClick="minus2()">- 2</button>
           </p>
-            <p class="advancedoptions" onClick="floor()">
+            <p class="advancedoptions hide" onClick="floor()">
               <button type="button" class="advanced">FLOOR</button>
             </p>
-            <p class="advancedoptions">
+            <p class="advancedoptions hide">
               <button type="button" class="advanced" onClick="squareroot()">&#8730;</button>
             </p>
-             <p class="advancedoptions">
+             <p class="advancedoptions hide">
               <button type="button" class="advanced" onClick="powerof2()">X<sup>2</sup></button>
             </p> 
-            <p class="advancedoptions">
+            <p class="advancedoptions hide">
               <button type="button" class="advanced" onClick="log10()">LOG 10</button>
             </p> 
 
@@ -72,7 +71,7 @@
     btn.addEventListener('click', (e) => {
        
     for(var counter = 0; counter < advancedoptions.length; counter++){
-      advancedoptions[counter].classList.toggle('open');
+      advancedoptions[counter].classList.toggle('hide');
     
     }
     

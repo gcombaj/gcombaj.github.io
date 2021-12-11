@@ -80,13 +80,12 @@ ul{
 
 .contact form p.advancedoptions{
   margin:0;
-  display: none;
-  transition: all .5s ease-in-out;
+  }
+.hide {
+    display: none;  
+  
 }
 
-.open{
-  display: block!important;
-}
 
 .contact form .full{
   grid-column: 1 / 5;
@@ -107,7 +106,7 @@ ul{
 .contact form button.advanced{
   background:#d8a6a9;
   border:0;
-  display: hidden;
+  
   
 }
 
