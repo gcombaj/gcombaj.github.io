@@ -63,6 +63,17 @@ function main() {
 
 // draw a border around the canvas
 function clear_board() {
+  
+  if(window.innerWidth < 768){
+    snakeboard.width = window.innerWidth-50;
+    snakeboard.height = window.innerHeight-200;
+  }
+  else {
+    snakeboard.width = 500;
+    snakeboard.height = 500;    
+  }
+
+  
   //  Select the colour to fill the drawing
   snakeboard_ctx.fillStyle = board_background;
   //  Select the colour for the border of the canvas
@@ -127,12 +138,14 @@ function gen_food() {
   });
 }
 
+const LEFT_KEY = 37;
+const RIGHT_KEY = 39;
+const UP_KEY = 38;
+const DOWN_KEY = 40;
+
+
 function change_direction(event) {
-  const LEFT_KEY = 37;
-  const RIGHT_KEY = 39;
-  const UP_KEY = 38;
-  const DOWN_KEY = 40;
-  
+
 // Prevent the snake from reversing
 
   if (changing_direction) return;
@@ -178,3 +191,60 @@ function move_snake() {
     snake.pop();
   }
 }
+
+// touch swipe detection test
+
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;                                                        
+var yDown = null;
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+         evt.originalEvent.touches; // jQuery
+}                                                     
+                                                                         
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+    yDown = firstTouch.clientY;                                      
+};                                                
+                                                                         
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+                                                                         
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+            /* left swipe */ 
+            
+            evt.keyCode = LEFT_KEY;
+        } else {
+            /* right swipe */
+            
+            evt.keyCode = RIGHT_KEY;
+        }                       
+    } else {
+        if ( yDiff > 0 ) {
+            /* up swipe */ 
+            
+            evt.keyCode = UP_KEY;
+        } else { 
+            /* down swipe */
+            
+            evt.keyCode = DOWN_KEY;
+        }                                                                 
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;             
+    change_direction(evt);
+};
